@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
+import { connectRouter } from 'connected-react-router';
 import { click } from './clickReducer';
 
-const rootReducer = () =>
+const rootReducer = (history) =>
   combineReducers({
-    click
+    click,
+    router: connectRouter(history)
   });
 
 export default rootReducer;
