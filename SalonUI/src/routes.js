@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Routes } from 'root/constants/routeConstants';
 import MainLayout from './modules/MainLayout';
 import Home from './modules/Home';
 import About from './modules/About';
@@ -11,8 +12,8 @@ const AppRoutes = () => {
       <Router>
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/about" component={About} />
-          <Route path="/shop" component={Shop} />
+          <Route path={Routes.ABOUT} component={About} />
+          <Route path={Routes.SHOP} component={Shop} />
         </Switch>
       </Router>
     </MainLayout>
