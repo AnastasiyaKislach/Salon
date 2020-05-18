@@ -1,1 +1,1 @@
-export const clickCounter = (state) => state.counter;
+export const clickCounter = (state) => state.click.counter;
