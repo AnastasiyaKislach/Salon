@@ -4,7 +4,7 @@ import Provider from 'react-redux/es/components/Provider';
 import { ConnectedRouter } from 'connected-react-router';
 import { configureStore, history } from './store/configureStore';
 import AppRoutes from './routes';
-import './index.scss';
+import './styles/index.scss';
 
 export const store = configureStore();
 

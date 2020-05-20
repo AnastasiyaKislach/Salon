@@ -1,4 +1,9 @@
 export const Routes = {
+  HOME: '/',
+  COLLECTIONS: '/collections',
+  ACCESSORIES: '/accessories',
+  NEWS: '/news',
   ABOUT: '/about',
-  SHOP: '/shop'
+  BRIDES: '/brides',
+  APPLY: '/apply'
 };
