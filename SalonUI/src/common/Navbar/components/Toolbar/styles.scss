@@ -1,0 +1,80 @@
+@import "root/styles/variables";
+
+$menuArrow-img-path: "../../../../static/images";
+
+.toolbar {
+  padding: 1.5rem 0;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.toolbar__navigation {
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.toolbar__logo {
+  float: left;
+
+  a {
+    font-size: 2rem;
+  }
+}
+
+.toolbar__navbar {
+  float: right;
+  padding: 0;
+  list-style: none;
+}
+
+.toolbar__link {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 0.8rem;
+
+  &:hover,
+  &:active {
+    color: $hover-link;
+  }
+
+  &--active {
+    color: $hover-link;
+    background: url("#{$menuArrow-img-path}/menu-arrow.png") no-repeat;
+    background-position: top center;
+  }
+}
+
+.toolbar__toggle {
+  float: right;
+  display: block;
+}
+
+@media (max-width: $display-width-lg) {
+  .page__toolbar {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: $display-width-md) {
+  .toolbar__link {
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: $display-width-sm) {
+  .toolbar__navbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .toolbar__toggle {
+    display: none;
+  }
+}

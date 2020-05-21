@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Routes } from 'root/constants/routeConstants';
 import MainLayout from './modules/MainLayout';
-import InnerLayout from './modules/common/InnerLayout';
+import InnerLayout from './modules/InnerLayout';
 import Home from './modules/Home';
 import About from './modules/About';
 import Shop from './modules/Shop';

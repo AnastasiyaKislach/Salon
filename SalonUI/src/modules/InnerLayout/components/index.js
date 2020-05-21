@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Navbar from 'root/modules/common/Navbar';
+import Navbar from 'root/common/Navbar';
 
 const InnerLayout = ({ children }) => (
   <div className={'innerContainer'}>

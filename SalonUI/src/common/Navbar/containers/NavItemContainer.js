@@ -19,7 +19,7 @@ class NavItemContainer extends Component {
     let isActive = pathname === url;
     let propsObj = {
       ...this.props,
-      className: `header__link ${isActive ? 'header__link--active' : ''}`
+      className: `toolbar__link ${isActive ? 'toolbar__link--active' : ''}`
     };
     return <NavItem {...propsObj} />;
   }
